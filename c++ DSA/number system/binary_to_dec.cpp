@@ -3,7 +3,7 @@ using namespace std;
 int bindecmal( int bin){
     int ans = 0 , pow = 1;
 
-      while(bin > 0){
+    while(bin > 0){
         int rem = bin % 10;
         ans += rem * pow;
 
