@@ -1,7 +1,9 @@
+//add vector in this question
+
 #include<iostream>
 #include<algorithm>     //use to max and min funtion
 using namespace std;
-int maxsumVal(int arr[],int size){           //brute force 
+int maxsumVal(int arr[],int size){           //brute force
     int maxsum = 0;
     for(int i = 0;i < size;i++){
         int currsum = 0;
