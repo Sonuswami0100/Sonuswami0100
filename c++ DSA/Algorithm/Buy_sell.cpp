@@ -1,4 +1,4 @@
-// i am solve stock buy and sell problem
+// solve stock buy and sell problem
 #include<iostream>
 #include<climits>
 #include<vector>
