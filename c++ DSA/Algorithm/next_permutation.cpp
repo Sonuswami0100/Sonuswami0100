@@ -1,19 +1,18 @@
-                 //solve the bug Tomorrow
 #include<iostream>
 #include<algorithm>
 #include<vector>
 using namespace std;
-int next_permutation(vector <int> arr[],int n){
+void next_permutation(vector <int>& arr,int n){
     int piv = -1;
-    for(int i = n-2;i >= 0;i--){
+    for(int i = n-2;i >= 0;i--){    //we find the pivt(i < i+1)
         if(arr[i] < arr[i+1]){
             piv = i;
             break;
         }
     }
-    if(piv == -1){
+    if(piv == -1){         //if not find pivt
         reverse(arr.begin(),arr.end());
-        return -1;
+        return ;
     }
     //2
     for(int i = n-1;i > piv;i--){
@@ -32,6 +31,10 @@ int next_permutation(vector <int> arr[],int n){
 
 }
 int main(){
-    vector<int> arr = {1,2,3};
+    vector<int> arr = {3,2,1};
     int n = sizeof(arr)/sizeof(0);
+    next_permutation(arr,n);
+    for(int val : arr){
+        cout<<val<<" ";
+    }
 }
