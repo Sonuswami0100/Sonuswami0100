@@ -28,7 +28,7 @@ bool isPalindrome(string s) {
         
 }
 int main(){
-    string str = "madam";
+    string str = "Madam";
     if(isPalindrome(str)){
         cout<<"Is palindrome"<<endl;
     }else{
